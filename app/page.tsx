@@ -15,6 +15,13 @@ const projects = [
     technologies: ["JavaScript", "HTML", "CSS"],
     link: "https://github.com/Maritherecua/wdd231",
   },
+  {
+    title: "Playlist Generator",
+    description:
+      "A web application that generates playlists based on user mood, utilizing APIs for music data and providing a seamless user experience.",
+    technologies: ["JavaScript", "React", "Next.js", "CSS", "Spotify API"],
+    link: "https://playlist-generator-main.onrender.com",
+  }
 ];
 
 export default function Home() {
