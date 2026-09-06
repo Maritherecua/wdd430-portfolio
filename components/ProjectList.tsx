@@ -1,21 +1,15 @@
-import ProjectCard, { Project } from "./ProjectCard";
+import ProjectCard from "./ProjectCard";
+interface Project {
+    title: string;
+    description: string;
+    technologies: string[];
+    link?: string;
+}
+interface ProjectListProps {
+    projects: Project[];
+}
 
-const projects: Project[] = [
-    {
-        title: "Project One",
-        description: "A short description of this project goes here.",
-    },
-    {
-        title: "Project Two",
-        description: "A short description of this project goes here.",
-    },
-    {
-        title: "Project Three",
-        description: "A short description of this project goes here.",
-    },
-];
-
-export default function ProjectList() {
+export default function ProjectList({ projects }: ProjectListProps) {
     return (
         <div className="grid w-full gap-6 sm:grid-cols-2">
             {projects.map((project) => (
