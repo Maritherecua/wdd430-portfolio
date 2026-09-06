@@ -3,6 +3,7 @@ import Link from "next/link";
 export default function Header() {
     return (
         <header className="border-b border-zinc-200 dark:border-zinc-800">
+            <div id="header-title" className="text-lg font-semibold">Maria T Arroyo</div>
             <nav className="mx-auto flex max-w-3xl items-center justify-between px-16 py-4">
                 <Link href="/" className="text-lg font-semibold">
                     My Portfolio
